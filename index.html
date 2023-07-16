@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer ></script>
+    <title>Recipe Site</title>
+</head>
+<body>
+    <div class="container">
+        <div class="meal-container">
+            
+            <div class="meal-search">
+                <h1>Find Meals For Your Ingredients</h1>
+                <blockquote>
+                    Real food doesn't have ingredients, real food is ingredients.
+                    <br> <cite>- Jamie Oliver</cite>
+                </blockquote>
+                <div class="search-box">
+                    <input type="search" id="search-txt" placeholder="Enter an Ingredients">
+                    <button class="search-btn btn" type="submit" id="btn-search" >  <i class="fas fa-search"></i></button>
+                </div>
+
+            </div>
+
+            <!-- meal results -->
+            <div class="meal-proposed"  >
+                <h2 class="title">Your Meal Recipe : </h2>
+                <div class="meal" id="meal-proposed" >
+                    <div class="meal-item" >
+                        <div class="meal-img"> 
+                            <img src="./img/food.jpg"/>
+                        </div>
+                        <div class="meal-details">
+                            <h3>Potato Chips</h3>
+                            <button id="btn-details" class="btn btn-details"  >Get Recipe</button>
+                        </div>
+                    </div>
+                    <div class="meal-item">
+                        <div class="meal-img"> 
+                            <img src="./img/food.jpg"/>
+                        </div>
+                        <div class="meal-details">
+                            <h3>Potato Chips</h3>
+                            <button id="btn-details" class="btn btn-details"  >Get Recipe</button>
+                        </div>
+                    </div>
+                    <div class="meal-item">
+                        <div class="meal-img"> 
+                            <img src="./img/food.jpg"/>
+                        </div>
+                        <div class="meal-details">
+                            <h3>Potato Chips</h3>
+                            <button id="btn-details" class="btn btn-details" >Get Recipe</button>
+                        </div>
+                    </div>
+                    <div class="meal-item">
+                        <div class="meal-img"> 
+                            <img src="./img/food.jpg"/>
+                        </div>
+                        <div class="meal-details">
+                            <h3>Potato Chips</h3>
+                            <button id="btn-details" class="btn btn-details" >Get Recipe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Details container -->
+            <div class="details-container" id="details">
+                <button id="details-close"><i class = "fas fa-times"></i></button>
+                <h2>Name of recipe</h2>
+                <p>Ingredients</p>
+                <div class="Instructions">
+                    <h3> Instructions </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, cumque vel. Voluptate eveniet enim iusto laboriosam ab. Magni placeat quibusdam perferendis sunt facere laudantium officiis soluta. Perferendis error sequi unde.</p>
+                </div>
+                <div class="recipe-img">
+                    <img src="./img/food.jpg" />
+                </div>
+                <div class="recipe-vedio">
+                    <a href="">Recipe Vedio</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+</body>
+</html>
