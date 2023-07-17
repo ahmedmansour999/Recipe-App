@@ -291,7 +291,11 @@ background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, F
       padding: 0;
     }
     .meal{
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .sugg{
+      grid-template-columns: repeat(1, 1fr) !important;
+
     }
   }
 
