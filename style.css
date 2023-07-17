@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Orbitron:wght@900&family=Poppins&family=Teko:wght@500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Orbitron:wght@900&family=Poppins:wght@400;600&family=Teko:wght@500;600;700&display=swap');
 *{
     margin: 0;
+    scroll-behavior: smooth;
+    transition: all 2s ease-in-out;
 }
 body{
     font-family: 'Teko', sans-serif;
+    background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .btn{
     font-family: inherit;
@@ -15,6 +21,91 @@ body{
 .container{
     min-height: 100vh;
 }
+
+/* nav - container */
+.nav-container{
+    padding: 2rem;
+    background-image: url(./img/cover.avif);
+    background-position: center center;
+    background-size: cover;
+    min-height: 90vh;
+}
+.nav-container ul{
+  display: flex;
+  justify-content: space-around;
+    align-items: center;
+}
+.nav-container ul li {
+  list-style: none;
+}
+.nav-container li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.8rem;
+}
+.nav-container ul li a img{
+  WIDTH: 30%;
+}
+.nav-container p{
+  font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 4rem;
+    position: absolute;
+    top: 42%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+}
+.nav-container p button{
+      padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background: yellow;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Teko', sans-serif;
+    cursor: pointer;
+}
+.nav-container p button:hover{
+  opacity:.9;
+    background: #fcac06;
+
+}
+.nav-container p button a{
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width : 786px) {
+  .nav-container nav{
+    display: none;
+  }
+  .nav-container{
+        min-height: 30vh;
+  }
+  .nav-container p{
+  font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 4rem;
+        position: sticky;
+    transform: translate(0%, 0%);
+    display: flex;
+    flex-direction: column;
+}
+  
+}
+
+
+
+
+
+
+
+
+
+/* Meal container */
+
 .meal-container{
     padding: 2rem;
 }
@@ -29,9 +120,11 @@ body{
 .meal-search h1{
     font-size: 3rem;
     padding-bottom: 2rem;
+    color: white;
 }
 .meal-search blockquote{
     font-size: 1.4rem;
+    color: white;
 }
 .search-box{
     display: flex;
@@ -74,9 +167,11 @@ body{
 .meal-proposed {
     text-align: center;
     margin-top: 2rem;
+    display: none;
 }
 .meal-proposed .title{
     font-size: 2rem;
+    color: white;
 }
 .meal {
     display: grid;
@@ -89,7 +184,7 @@ body{
     width: 100%;
     width: 100%;
     background-color: #f5f6fa;
-    box-shadow: 1px 1px 9px 8px #dcdde1;
+    box-shadow: 1px 1px 9px 8px #c7c7c163;
     border-radius: 2rem;
     overflow: hidden;
   }
@@ -140,6 +235,7 @@ body{
   }
   .details-container h2 {
     font-size: 3rem;
+    
   }
   .details-container p{
     font-size: 1.5rem;
@@ -202,4 +298,45 @@ body{
   .display{
     display: block;
     
+  }
+
+
+  /* sugg meal style */
+
+  .meal-sugg {
+    text-align: center;
+    margin-top: 2rem;
+}
+.meal-sugg .title{
+    font-size: 2rem;
+    color: white;
+}
+.sugg {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-items: center;
+    padding-top: 2rem;
+  }
+  .sugg .sugg-item{
+    width: 100%;
+    width: 100%;
+    background-color: #f5f6fa;
+    box-shadow: 1px 1px 9px 8px #c7c7c163;
+    border-radius: 2rem;
+    overflow: hidden;
+  }
+  .sugg .sugg-item img{
+    width: 100%;
+  }
+  .sugg .sugg-item h3{
+    font-size: 1.5rem;
+    padding: .5rem;
+  }
+  .sugg .sugg-item .btn{
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    background-color: #ddd7c994;
+    font-size: 1.3rem;
   }

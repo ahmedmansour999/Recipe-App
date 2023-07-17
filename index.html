@@ -10,26 +10,100 @@
 </head>
 <body>
     <div class="container">
+        <div class="nav-container">
+            <nav>
+                <ul>
+                    <li><a href="#"><img src="./img/icon.png" /></a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#search-box">Get Recipe</a></li>
+                </ul>
+            </nav>
+            <p>Chef's Pencil <br>
+                <button class="btn"><a href="#search-box">Get Recipe</a></button>
+            </p>
+        </div>
         <div class="meal-container">
             
             <div class="meal-search">
                 <h1>Find Meals For Your Ingredients</h1>
                 <blockquote>
                     Real food doesn't have ingredients, real food is ingredients.
-                    <br> <cite>- Jamie Oliver</cite>
+                    <br> <cite>- TastyTales</cite>
                 </blockquote>
-                <div class="search-box">
+                <div class="search-box" id="search-box">
                     <input type="search" id="search-txt" placeholder="Enter an Ingredients">
                     <button class="search-btn btn" type="submit" id="btn-search" >  <i class="fas fa-search"></i></button>
                 </div>
 
             </div>
 
+            <!-- suggets meals -->
+            <div class="meal-sugg" id="meal-sugg-container"  >
+                <h2 class="title">Your Meal Recipe : </h2>
+                <div class="sugg" id="meal-sugg" >
+                    <div class="sugg-item"   >
+                        <div class="sugg-img"> 
+                            <img src="./img/mak.jpg"/>
+                        </div>
+                        <div class="sugg-details">
+                            <h3>Spicy Arrabiata Penne</h3>
+                            <button id="sugg-details-btn" class="btn sugg-details-btn"  >Get Recipe</button>
+                        </div>
+                    </div>
+                    <div class="sugg-item"   >
+                        <div class="sugg-img"> 
+                            <img src="./img/checken.jpg"/>
+                        </div>
+                        <div class="sugg-details">
+                            <h3>Chicken</h3>
+                            <button id="sugg-details-btn" class="btn sugg-details-btn"  >Get Recipe</button>
+                        </div>
+                    </div>
+                    <div class="sugg-item"   >
+                        <div class="sugg-img"> 
+                            <img src="./img/1.jpg"/>
+                        </div>
+                        <div class="sugg-details">
+                            <h3>Mediterranean Pasta Salad</h3>
+                            <button id="sugg-details-btn" class="btn sugg-details-btn"  >Get Recipe</button>
+                        </div>
+                    </div>
+                    <div class="sugg-item"   >
+                        <div class="sugg-img"> 
+                            <img src="./img/2.jpg"/>
+                        </div>
+                        <div class="sugg-details">
+                            <h3>Spaghetti Bolognese</h3>
+                            <button id="sugg-details-btn" class="btn sugg-details-btn"  >Get Recipe</button>
+                        </div>
+                    </div>
+                    <div class="sugg-item"   >
+                        <div class="sugg-img"> 
+                            <img src="./img/des.jpg"/>
+                        </div>
+                        <div class="sugg-details">
+                            <h3>Chocolate Gateau</h3>
+                            <button id="sugg-details-btn" class="btn sugg-details-btn"  >Get Recipe</button>
+                        </div>
+                    </div>
+                    <div class="sugg-item"   >
+                        <div class="sugg-img"> 
+                            <img src="./img/sa.jpg"/>
+                        </div>
+                        <div class="sugg-details">
+                            <h3>Cream Cheese Tart</h3>
+                            <button id="sugg-details-btn" class="btn sugg-details-btn"  >Get Recipe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
             <!-- meal results -->
-            <div class="meal-proposed"  >
+            <div class="meal-proposed" id="meal-proposed-container"  >
                 <h2 class="title">Your Meal Recipe : </h2>
                 <div class="meal" id="meal-proposed" >
-                    <div class="meal-item" >
+                    <!-- <div class="meal-item" >
                         <div class="meal-img"> 
                             <img src="./img/food.jpg"/>
                         </div>
@@ -37,34 +111,7 @@
                             <h3>Potato Chips</h3>
                             <button id="btn-details" class="btn btn-details"  >Get Recipe</button>
                         </div>
-                    </div>
-                    <div class="meal-item">
-                        <div class="meal-img"> 
-                            <img src="./img/food.jpg"/>
-                        </div>
-                        <div class="meal-details">
-                            <h3>Potato Chips</h3>
-                            <button id="btn-details" class="btn btn-details"  >Get Recipe</button>
-                        </div>
-                    </div>
-                    <div class="meal-item">
-                        <div class="meal-img"> 
-                            <img src="./img/food.jpg"/>
-                        </div>
-                        <div class="meal-details">
-                            <h3>Potato Chips</h3>
-                            <button id="btn-details" class="btn btn-details" >Get Recipe</button>
-                        </div>
-                    </div>
-                    <div class="meal-item">
-                        <div class="meal-img"> 
-                            <img src="./img/food.jpg"/>
-                        </div>
-                        <div class="meal-details">
-                            <h3>Potato Chips</h3>
-                            <button id="btn-details" class="btn btn-details" >Get Recipe</button>
-                        </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 

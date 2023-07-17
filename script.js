@@ -1,12 +1,25 @@
 const btn_search = document.getElementById("btn-search");
 const meal_proposed = document.getElementById("meal-proposed");
 const details = document.getElementById("details");
-const details_close = document.getElementById("details-close");
+const details_close = document.querySelectorAll("details-close");
+const meal_sugg = document.getElementById("meal-sugg-container") ;
+const meal_sugg_random = document.getElementById("meal-sugg") ;
+const meal_proposed_container = document.getElementById("meal-proposed-container") ;
 
 
-btn_search.addEventListener("click", getMealList);
+
+btn_search.addEventListener("click", ()=>{ 
+    (async () => {
+        await getMealList();
+        meal_proposed_container.style.display = "block";
+        meal_sugg.style.display = "none"
+      })();
+});
+
+
+
 meal_proposed.addEventListener('click', getMealDetails);
-details_close.addEventListener('click', ()=>{
+details.addEventListener('click', ()=>{
     details.classList.remove('display');
 });
 
@@ -73,3 +86,18 @@ function mealRecipe(meal) {
     details.innerHTML = html;
     details.classList.add('display');
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
